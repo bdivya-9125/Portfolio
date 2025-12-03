@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divya Bojja | Portfolio</title>
+
+<style>
+/* ---------------------- THEME VARIABLES ---------------------- */
+:root {
+  --bg1: #0a0014;
+  --bg2: #21003a;
+  --glass: rgba(255, 255, 255, 0.07);
+  --glass-border: rgba(255, 255, 255, 0.16);
+  --accent1: #c38aff;
+  --accent2: #8f4fff;
+  --muted: #cfcfe0;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top left, var(--bg2), var(--bg1));
+  color: #eee;
+}
+
+/* Layout */
+.section { padding: 80px 20px; }
+.container { max-width: 1100px; margin: auto; }
+
+/* Glass UI */
+.glass {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 22px;
+  transition: .3s;
+}
+.glass:hover {
+  border-color: var(--accent1);
+  box-shadow: 0 0 20px rgba(157, 93, 255, 0.35);
+}
+
+/* Gradient text */
+.grad {
+  background: linear-gradient(90deg, var(--accent1), var(--accent2));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 130px 20px;
+}
+.hero h1 { font-size: 48px; font-weight: 700; }
+.hero p {
+  color: var(--muted);
+  max-width: 750px;
+  margin: 20px auto;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* ABOUT */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+}
+
+.photo-box {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 3px solid var(--accent1);
+  background: url('divya_pic.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+/* Project Categories */
+.project-category { margin-bottom: 40px; }
+.project-category h3 { margin-bottom: 15px; }
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+/* Experience */
+.exp-card { margin-bottom: 20px; }
+
+/* Contact */
+.contact-box {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+a { color: var(--accent1); text-decoration: none; }
+
+/* CV Button */
+.cv-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 22px;
+  background: var(--accent2);
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: .3s;
+}
+.cv-btn:hover { background: var(--accent1); }
+
+/* Responsive */
+@media(max-width:900px){
+  .about-grid,
+  .skills-grid,
+  .project-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+  <h1>Hello, I'm <span class="grad">Divya Bojja</span></h1>
+  <p>
+    ECE Student at VIT Chennai • Aspiring <b>VLSI Engineer</b> & 
+    <b>Software & Embedded Developer</b> skilled in Verilog, MATLAB,DSP, Python ML,
+    Embedded Systems, and PCB Design.
+  </p>
+
+  <!-- Updated Resume Link (CHANGED HERE) -->
+  <a href="Bojja_Divya_consolidated _resume (2).pdf" download class="cv-btn">Download Resume</a>
+</section>
+
+<!-- ================= ABOUT ME ================= -->
+<section class="section">
+  <div class="container">
+    <h2 class="grad" style="font-size:32px;margin-bottom:20px;">About Me</h2>
+
+    <div class="about-grid">
+      <div class="photo-box"></div>
+
+      <div>
+        <div class="glass">
+          I am a 3rd year ECE student at VIT Chennai with hands-on experience in 
+          <b>VLSI design, RTL coding, MATLAB/DSP, embedded systems, microcontrollers,
+          Python ML workflows, and PCB design.</b>
+        </div>
+        <br>
+        <div class="glass">
+          I have built real-world systems including <b>deep learning accident detection (ResNet50),
+          ECG HRV-based emotion recognition, CMOS adders in Cadence, GPS/GSM accident alert systems,
+          fingerprint security locks, gesture-recognition gloves, RF signal jammers,
+          and FFT-based musical note identification.</b>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="section">
+  <div class="container">
+    <h2 class="grad" style="font-size:32px;margin-bottom:20px;">Skills</h2>
+
+    <div class="skills-grid">
+
+      <div class="glass">
+        <b>Programming:</b><br>
+        C, C++, Java, Python, SQL, Data Structures & Algorithms, OOP
+      </div>
+
+      <div class="glass">
+        <b>VLSI & Electronics:</b><br>
+        Verilog HDL, RTL Design, Digital Electronics, DSP, Embedded Systems, IoT Development, PCB Design
+      </div>
+
+      <div class="glass">
+        <b>Software / ML:</b><br>
+        Machine Learning, MATLAB, MATLAB/Simulink, Google Colab
+      </div>
+
+      <div class="glass">
+        <b>Tools:</b><br>
+        Git, GitHub, VS Code, Sublime Text, MySQL, ModelSim, Xilinx Vivado,
+        Cadence Virtuoso, NI Circuit Design Suite, Arduino IDE, ESP8266
+      </div>
+
+      <div class="glass">
+        <b>Operating Systems:</b><br>
+        Ubuntu (SoC Flow), Linux
+      </div>
+
+      <div class="glass">
+        <b>Soft Skills:</b><br>
+        Problem-Solving, Analytical Thinking, Attention to Detail,
+        Team Collaboration, Adaptability, Communication Skills
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="section">
+  <div class="container">
+
+    <h2 class="grad" style="font-size:32px;margin-bottom:20px;">Projects</h2>
+
+    <!-- VLSI -->
+    <div class="project-category">
+      <h3 class="grad">VLSI / RTL Projects</h3>
+      <div class="project-grid">
+        <div class="glass">
+          <h3 class="grad">16-bit RCA vs Weinberger Adder</h3>
+          Designed & simulated both architectures in Cadence Virtuoso (180nm).
+          Weinberger showed lower delay. Compared delay, power, and area.
+        </div>
+      </div>
+    </div>
+
+    <!-- ML -->
+    <div class="project-category">
+      <h3 class="grad">Machine Learning Projects</h3>
+      <div class="project-grid">
+        <div class="glass">
+          <h3 class="grad">Accident Detection using ResNet50</h3>
+          Built a CNN-based accident classifier (~94.9% accuracy) using Colab.
+          Automated WhatsApp alerts using Python (PyWhatKit).
+        </div>
+      </div>
+    </div>
+
+    <!-- EMBEDDED -->
+    <div class="project-category">
+      <h3 class="grad">Embedded & IoT Projects</h3>
+      <div class="project-grid">
+        <div class="glass">
+          <h3 class="grad">Accident Information System (GPS + GSM)</h3>
+          Real-time crash alert using Arduino, ADXL335, GPS SIM28ML, GSM SIM900A.
+        </div>
+
+        <div class="glass">
+          <h3 class="grad">Fingerprint Door Lock</h3>
+          Secure biometric lock using R307 sensor, Arduino UNO & solenoid actuator.
+        </div>
+
+        <div class="glass">
+          <h3 class="grad">Hand Gesture Recognition Glove</h3>
+          Flex-sensor glove with 8051 + Bluetooth HC-05.
+        </div>
+
+        <div class="glass">
+          <h3 class="grad">Mobile Signal Jammer</h3>
+          Short-range RF jammer using 555 timer & BF495 transistor.
+        </div>
+      </div>
+    </div>
+
+    <!-- MATLAB -->
+    <div class="project-category">
+      <h3 class="grad">MATLAB / DSP Projects</h3>
+      <div class="project-grid">
+        <div class="glass">
+          <h3 class="grad">ECG Emotion Recognition (HRV)</h3>
+          Extracted HRV features & classified emotional states.
+        </div>
+
+        <div class="glass">
+          <h3 class="grad">Musical Notes Identification (FFT)</h3>
+          Identified musical notes using FFT analysis.
+        </div>
+
+        <div class="glass">
+          <h3 class="grad">Adaptive Modulation Simulation</h3>
+          Simulated UEP-based modulation for reliable data transmission.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="section">
+  <div class="container">
+    <h2 class="grad" style="font-size:32px;margin-bottom:20px;">Experience</h2>
+
+    <div class="glass exp-card">
+      <h3 class="grad">PCB Design Intern — Surya’s MIB Enterprises</h3>
+      Worked on PCB schematic design, routing, debugging using NI Circuit Design Suite.
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section">
+  <div class="container">
+    <h2 class="grad" style="font-size:32px;margin-bottom:20px;">Contact</h2>
+
+    <div class="glass contact-box">
+      <p>Email: <a href="mailto:divyabojja9933@gmail.com">divyabojja9933@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/bdivya-9125">github.com/bdivya-9125</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/bojja-divya/">linkedin.com/in/bojja-divya</a></p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
