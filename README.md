@@ -1,21 +1,5 @@
-# 🌐 Personal Portfolio
-
-This repository contains my personal portfolio website showcasing my projects, skills, and experience.  
-It provides an overview of my work in electronics, VLSI, embedded systems, MATLAB, AI,ML,Software development and web development.
-
----
-
-## 🛠️ Built With
-- HTML  
-- CSS   
-
----
-
-## 📂 Contents
-- index.html  
-
----
-
-## 🔗 Live Portfolio
-https://bdivya-9125.github.io/Portfolio/
-
+# Bojja Divya Portfolio
+React + TypeScript + Tailwind (Vite).
+- `npm install`, then `npm run dev` to run and `npm run build` to build into `dist/`.
+- Vercel: import the repo, framework "Vite", no other setup. GitHub Pages: upload `dist/` (paths are relative).
+- Edit content in `src/data.ts`. Add a project `link` there to replace "coming soon". Replace `public/Divya_Bojja_Resume.pdf` to update the resume.
